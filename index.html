@@ -20,35 +20,29 @@
 
             <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
             <a-assets>
-                <a-asset-item id="redandblue-obj" src="model_obj/redandblue/redandblue.obj"></a-asset-item>
-                <a-asset-item id="redandblue-mtl" src="model_obj/redandblue/redandblue.mtl"></a-asset-item>
-                <a-asset-item id="ar_batu-obj" src="model_obj/ar_batu/ar_batu_01.obj"></a-asset-item>
-                <a-asset-item id="ar_batu-mtl" src="model_obj/ar_batu/ar_batu_01.mtl"></a-asset-item>
+                <a-asset-item id="batu-obj" src="model_obj/batu/batu_01.obj"></a-asset-item>
+                <a-asset-item id="batu-mtl" src="model_obj/batu/batu_01.mtl"></a-asset-item>
             </a-assets>
 
 
             <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
             <a-marker preset="hiro">
-                <a-obj-model id="redandblue"
-                             src="#redandblue-obj"
-                             mtl="#redandblue-mtl"
-                             position="0 0 0"
-                             scale="1.2 1.2 1.2"></a-obj-model>
-
-                <a-text value="Hello Rietveld !"
-                        position="0 1.8 0"
-                        align="center" ></a-text>
-
-                <a-box position="0 -0.1 0"
-                       scale="1.2 0.05 1.2"
-                       material='color: white;'></a-box>
+                <a-text value="Hello KURUMI"
+                        position="0 0.6 0"
+                        align="center"
+                        color="#88ff31">
+                </a-text>
+                
+                <a-box position="0 0 0"
+                       scale="1 0.02 1"
+                       color="#c6d8ea"></a-box>
             </a-marker>
 
             <!-- マーカーを登録（「skita」マーカー） -->
             <a-marker type='pattern' url='./marker/skita16.pat'>
                 <a-obj-model id="ar_batu"
-                             src="#ar_batu-obj"
-                             mtl="#ar_batu-mtl"
+                             src="#batu-obj"
+                             mtl="#batu-mtl"
                              position="0 0.2 0"
                              scale="0.05 0.05 0.05">
             <a-animation attribute="rotation"
