@@ -22,6 +22,8 @@
             <a-assets>
                 <a-asset-item id="batu-obj" src="model_obj/batu/batu_01.obj"></a-asset-item>
                 <a-asset-item id="batu-mtl" src="model_obj/batu/batu_01.mtl"></a-asset-item>
+                <a-asset-item id="ebi-obj" src="model_obj/ebi/ebi.obj"></a-asset-item>
+                <a-asset-item id="ebi-mtl" src="model_obj/ebi/ebi.mtl"></a-asset-item>
             </a-assets>
 
 
@@ -46,7 +48,7 @@
                              src="#batu-obj"
                              mtl="#batu-mtl"
                              position="0 0.2 0"
-                             rotation="30 0 0"
+                             rotation="-30 0 0"
                              scale="0.05 0.05 0.05">
             <!--<a-animation attribute="rotation"
                          from="0 0 0"
@@ -56,6 +58,13 @@
                          easing="linear">
             </a-animation> -->
                     <!-- <a-box scale=".25 .25 .25" position="0 .5 0" color="#338be3"></a-box> -->
+                </a-obj-model>
+                <a-obj-model id="ebi"
+                             src="#ebi-obj"
+                             mtl="#ebi-mtl"
+                             position="0 0.5 0"
+                             rotation="-30 0 0"
+                             scale="0.05 0.05 0.05">
                 </a-obj-model>
             </a-marker>
 
